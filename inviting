@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김정애의 칠순 잔치에 형제자매를 초대합니다</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif KR', serif;
+            background-color: #f9f3f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .invitation-card {
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            word-break: keep-all;
+            word-wrap: break-word;
+        }
+        
+        .card-header {
+            background-color: #a67c52;
+            color: #fff;
+            position: relative;
+        }
+        
+        .card-header::before, .card-header::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.3;
+        }
+        
+        .card-header::before {
+            top: 20px;
+            left: 20px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8 S16.41,20,12,20z M9.5,8.5l2.5,3l2.5-3H9.5z M9.5,15.5l2.5-3l2.5,3H9.5z"/></svg>');
+        }
+        
+        .card-header::after {
+            top: 20px;
+            right: 20px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8 S16.41,20,12,20z M9.5,8.5l2.5,3l2.5-3H9.5z M9.5,15.5l2.5-3l2.5,3H9.5z"/></svg>');
+        }
+        
+        .message p {
+            white-space: pre-line;
+        }
+        
+        .map-link {
+            background-color: #a67c52;
+            transition: background-color 0.3s;
+        }
+        
+        .map-link:hover {
+            background-color: #8a6642;
+        }
+        
+        @media print {
+            body {
+                background-color: #fff;
+            }
+            
+            .invitation-card {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen p-4">
+    <div class="invitation-card w-full">
+        <div class="card-header text-center py-8 px-6">
+            <h1 class="text-2xl md:text-3xl font-bold mb-2 leading-relaxed">김정애의 칠순 잔치에<br>형제자매를 초대합니다</h1>
+            <p class="text-base md:text-lg font-normal opacity-90">일흔 번째 생일을 맞이하여</p>
+        </div>
+        
+        <div class="px-6 py-8 text-center">
+            <div class="message text-center text-base md:text-lg mb-8 px-2">
+                <p>세월이 흘러 어느덧 저의 칠순을
+맞이하게 되었습니다.<br> 그 동안 인생의 기쁨과 슬픔을 함께해주신<br> 형제자매 여러분께 감사의 마음을 전하고자<br>작은 자리를 마련했습니다.<br><br>비록 화려하지는 않지만<br>오랜만에 함께 모여 담소를 나누며<br> 정을 나누는 소중한 시간이 되었으면 합니다.<br> 부디 귀한 걸음 하시어 <br>자리를 빛내주시길 바랍니다.</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-6 mb-8">
+                <div class="flex flex-col md:flex-row items-start mb-4 text-left">
+                    <div class="font-bold min-w-[80px] mb-1 md:mb-0 md:mr-4">일시</div>
+                    <div class="flex-1">2025.06.07.토요일<br> 오전 11시 30분</div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start mb-4 text-left">
+                    <div class="font-bold min-w-[80px] mb-1 md:mb-0 md:mr-4">장소</div>
+                    <div class="flex-1">명가 진흙구이</div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start text-left">
+                    <div class="font-bold min-w-[80px] mb-1 md:mb-0 md:mr-4">주소</div>
+                    <div class="flex-1">
+                        경기 부천시 오정구 소사로 599<br>
+                        (경기 부천시 오정구 여월동 86-2)
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://naver.me/xrSrTewO" target="_blank" class="map-link inline-block text-white py-3 px-6 rounded-full font-medium">약도 보기</a>
+        </div>
+        
+        <div class="text-center pb-8 px-6">
+            <p class="text-sm text-gray-600">정성껏 준비한 자리에 함께 해주시면 감사하겠습니다</p>
+        </div>
+    </div>
+</body>
+</html>
